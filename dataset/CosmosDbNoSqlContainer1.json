@@ -1,0 +1,29 @@
+{
+	"name": "CosmosDbNoSqlContainer1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDbNoSql1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"YEAR_ID": {
+					"type": "integer"
+				},
+				"MONTH_ID": {
+					"type": "integer"
+				},
+				"TOTAL_SALES": {
+					"type": "number"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "aggr_sales_data"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

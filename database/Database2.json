@@ -1,0 +1,25 @@
+{
+	"name": "Database2",
+	"properties": {
+		"Name": "Database2",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://mylake@strgacct0101.dfs.core.windows.net/Database2",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "poonamsynapse-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "009dbc72-59ab-4fac-a1da-542705f808e5"
+	},
+	"type": "DATABASE"
+}
